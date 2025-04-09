@@ -30,6 +30,23 @@ This screen retrieves and displays the saved user data from the database.
 - **Database:** Room Database
 - **Dependency Injection:** Dagger Hilt
 
+  ## Architecture Overview
+
+The application follows a clean architecture pattern with three main layers:
+
+### 1. Data Layer
+- Utilizes **Room** for persistence requests.
+- Handles data retrieval and storage in the local database.
+
+### 2. Domain Layer
+- Contains **business logic**, models, and **repository interfaces**.
+- Defines the operations and interactions that will be performed on the data.
+
+### 3. Presentation Layer
+- Handles **UI** components (e.g., activities, fragments).
+- The **ViewModel** layer is responsible for managing the UI state and interacting with the domain layer.
+
+
 ## Installation
 
 To run the application locally, follow these steps:
